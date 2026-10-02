@@ -1,0 +1,15 @@
+# Преобразуйте предложение так, чтобы первое слово было записано в верхнем регистре, второе — в нижнем, третье — в верхнем и так далее.
+# Между словами оставьте по одному пробелу.
+#
+# Пример: 'One TWO Three FOUR' → 'ONE two THREE four'.
+
+sentence = input("Введите предложение: ")
+new_list = sentence.split(" ")
+result = ""
+for num in range(0,len(new_list)):
+    if num % 2 == 0:
+       result += new_list[num].upper()  + " "
+    else:
+       result += new_list[num].lower() + " "
+print(result)
+    
